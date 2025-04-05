@@ -1,0 +1,520 @@
+* {
+  box-sizing: border-box;
+  font-family: asystem-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+
+
+
+@media only screen and (min-width: 100px) and (max-width: 700px) {
+  *::-webkit-scrollbar {
+    display: none;
+  }
+  
+  body {
+    background: linear-gradient(145deg, darkblue, darkslategray);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+  }
+  
+  
+  
+  .upper_box {
+    width: 100%;
+    background: linear-gradient(145deg, darkslateblue 30%, black 70%);
+    backdrop-filter: blur(20px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    
+  }
+  
+  .lower_box {
+    aspect-ratio: 1/1;
+    width: 40%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 100px;
+    border-radius: 50%;
+    background: linear-gradient(120deg, darkslategray, white);
+    overflow: hidden;
+    border: 5px solid white;
+    
+  }
+  
+  .lower_box img {
+    object-fit: cover;
+    width: 200px;
+    aspect-ratio: 1/1;
+  }
+  
+  .navbarmom {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100000;
+    overflow: hidden;
+  }
+  
+  a {
+    text-decoration: none;
+    
+  }
+  
+  .navbarmom a p {
+    color: yellow;
+    font-weight: bolder;
+    font-size: 30px;
+    
+  }
+  
+  .socials {
+    background: rgba(0, 0, 255, 0.5);
+    backdrop-filter: blur;
+    height: 50%;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    position: fixed;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 20px 5px;
+    border-radius: 20px;
+    z-index: 650;
+    
+  }
+  
+  
+  .socials a {
+    text-decoration: none;
+  }
+  
+  .socials img {
+    aspect-ratio: 1/1;
+    width: 20px;
+    margin-top: 5px;
+  }
+  
+  
+  .personal {
+    margin-top: 20px;
+    width: 80%;
+    margin-left: 10%;
+  }
+  
+  .header {
+    padding: 20px;
+    
+  }
+  
+  .header h1 {
+    font-size: 3rem;
+    text-align: center;
+    
+  }
+  
+  .header p {
+    color: yellow;
+    font-size: 12px;
+  }
+  
+  hr {
+    background: linear-gradient(145deg, white, darkblue);
+    border: none;
+    border-radius: 2.5px;
+  }
+  
+  .vertical {
+    width: 10px;
+  }
+  
+  .horizontal {
+    height: 2px;
+    width: 50%;
+    margin: 5px 0 5px -20px;
+  }
+  
+  .desc {
+    padding: 0 20px;
+  }
+  
+  .btn {
+    display: flex;
+  }
+  
+  .btn a button {
+    padding: 10px;
+    border: none;
+    font-weight: bolder;
+    border-radius: 10px;
+    background: linear-gradient(145deg, darkslategray, darkblue);
+  }
+  
+  
+  .skills {
+    width: 80%;
+    margin-left: 10%;
+  }
+  
+  
+  .front h2 {
+    width: 90%;
+    margin: 50px 5%;
+    text-align: center;
+    background: linear-gradient(245deg, darkslategray, darkblue);
+    padding: 10px;
+    border-radius: 30px;
+    border: 2px solid darkslateblue;
+    
+  }
+  
+  .front .skill {
+    display: flex;
+    width: 60%;
+    margin-left: 20%;
+    justify-content: space-between;
+  }
+  
+  .front .skill p,
+  .front .skill span {
+    padding: 10px;
+    font-size: 20px;
+    background: rgba(0, 255, 234, 0.2);
+    width: 50%;
+    margin: 2.5px;
+  }
+  
+  .front .skill p {
+    text-align: end;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  
+  .front .skill span {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  
+  .textmsg {
+    width: 80%;
+    margin-left: 10%;
+    font-size: 20px;
+    margin-top: 70px;
+  }
+  
+  .textmsg h4 {
+    font-size: 30px;
+    margin: 10px 0;
+  }
+  
+  .textmsg input,
+  select,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background: rgba(0, 255, 234, 0.2);
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+  }
+  
+  .textmsg button {
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    background: linear-gradient(245deg, darkslategray, darkblue);
+    font-weight: bolder;
+    
+  }
+  
+  .outro {
+    margin: 20px;
+    font-size: 14px;
+  }
+  
+}
+
+
+
+
+@media only screen and (min-width: 700px) and (max-width: 10000px) {
+  
+  *::-webkit-scrollbar {
+    display: none;
+  }
+  
+  body {
+    background-image: url("background.png");
+    overflow-y: auto;
+    overflow-x: none;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: contan;
+    width: 100%;
+  }
+  
+  
+  
+  .upper_box {
+    width: 1300px;
+    height: 700px;
+    background: linear-gradient(145deg, rgba(255, 0, 0, 0.1), rgba(0, 0, 255, 0.2));
+    backdrop-filter: blur(20px);
+    position: fixed;
+    top: -300px;
+    left: 20%;
+    z-index: 700;
+    border-radius: 80px;
+    transform: rotate(120deg);
+  }
+  
+  .lower_box {
+    position: fixed;
+    width: 40%px;
+    left: -100px;
+    top: -300px;
+    z-index: 600;
+  }
+  
+  .lower_box img {
+    width: 60%;
+    height: 60%;
+    object-fit: cover;
+  }
+  
+  .navbarmom {
+    background: rgba(22, 0, 0, 0.3);
+    border-bottom-left-radius: 30px;
+    height: 40px;
+    display: flex;
+    justify-content: end;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 100000;
+    overflow: hidden;
+    padding: 10px;
+  }
+  
+  .navbarmom a {
+    font-weight: bolder;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 0 10px;
+    
+  }
+  
+  .navbarmom a.active p {
+    color: yellow;
+  }
+  
+  .socials {
+    background: rgba(0, 0, 255, 0.5);
+    backdrop-filter: blur;
+    width: 50%;
+    left: 0;
+    bottom: 10px;
+    position: fixed;
+    display: flex;
+    justify-content: start;
+    padding: 5px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    z-index: 650;
+    
+  }
+  
+  .skills {
+    position: absolute;
+    left: 40%;
+    top: 20%;
+    z-index: 1000;
+    display: flex;
+    
+  }
+  
+  .socials a {
+    text-decoration: none;
+  }
+  
+  .socials img {
+    aspect-ratio: 1/1;
+    width: 20px;
+    margin-top: 5px;
+  }
+  
+  
+  .personal {
+    position: absolute;
+    left: 40%;
+    top: 20%;
+    z-index: 1000;
+    display: flex;
+    
+  }
+  
+  .header {
+    padding: 0 20px;
+    
+  }
+  
+  .header h1 {
+    font-size: 3rem;
+    
+  }
+  
+  .header p {
+    color: yellow;
+    font-size: 12px;
+  }
+  
+  hr {
+    background: linear-gradient(145deg, white, darkblue);
+    border: none;
+    border-radius: 2.5px;
+  }
+  
+  .vertical {
+    width: 10px;
+  }
+  
+  .horizontal {
+    height: 2px;
+    width: 50%;
+    margin: 5px 0 5px -20px;
+  }
+  
+  .desc {
+    padding: 0 20px;
+  }
+  
+  .btn {
+    display: flex;
+  }
+  
+  .btn a button {
+    text-align: center;
+    padding: 10px;
+    border: none;
+    font-weight: bolder;
+    border-radius: 10px;
+    background: linear-gradient(145deg, darkslategray, darkblue);
+  }
+  
+  
+  .skills {
+    position: absolute;
+    left: 40%;
+    top: 70%;
+    z-index: 1000;
+    display: block;
+    width: 60%;
+    border-top: 5px solid white;
+    border-width: 20%;
+  }
+  
+  .front {
+    margin-left: 10%;
+    width: 80%;
+    border-bottom: none;
+    border-radius: 30px;
+  }
+  
+  .front h2 {
+    width: 70%;
+    margin: 50px 15%;
+    text-align: center;
+    background: linear-gradient(245deg, darkslategray, darkblue);
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px solid darkslateblue;
+    
+  }
+  
+  .front .skill {
+    display: flex;
+    width: 60%;
+    margin-left: 20%;
+    justify-content: space-between;
+  }
+  
+  .front .skill p,
+  .front .skill span {
+    padding: 10px;
+    font-size: 20px;
+    background: rgba(0, 255, 234, 0.2);
+    width: 50%;
+    margin: 2.5px;
+  }
+  
+  .front .skill p {
+    text-align: end;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  
+  .front .skill span {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  
+  .textmsg {
+    width: 60%;
+    margin-left: 20%;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 70px;
+  }
+  
+  .textmsg h4 {
+    font-size: 30px;
+    margin: 10px 0;
+  }
+  
+  .textmsg input,
+  select,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    background: rgba(0, 255, 234, 0.2);
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+  }
+  
+  .textmsg button {
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    background: linear-gradient(245deg, darkslategray, darkblue);
+    font-weight: bolder;
+    
+  }
+  
+  .outro {
+    margin: 20px;
+    font-size: 14px;
+  }
+  
+}
